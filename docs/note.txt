@@ -1,0 +1,71 @@
+Hãy kể cho chúng tôi về công việc/dự án của bạn.
+Hãy chứng minh khả năng của bạn trong việc vận hành AI – mọi hồ sơ ứng tuyển sẽ được đánh giá thủ công trong vòng 3 ngày làm việc.
+
+01 Địa chỉ email của bạn *
+minhtri132nhu016@gmail.com
+02 Các công cụ phát triển/tác nhân AI bạn thường dùng *
+
+OpenClaw
+
+
+Mã Claude
+
+
+Bộ luật
+
+
+Đại lý Hermes
+
+Mã nguồn mở
+
+
+Mã Kilo
+
+Con trỏ
+
+Lướt ván buồm
+
+Trợ giúp
+
+Cline
+
+khác
+03 Hiện tại, chuỗi mô hình cơ bản chính được sử dụng *
+
+Bộ sưu tập Claude
+
+
+Chuỗi Gemini
+
+
+Chuỗi GPT
+
+Dòng sản phẩm MiMo
+
+Loạt DeepSeek
+
+Dòng Doubao
+
+Dòng sản phẩm MiniMax
+
+khác
+04. Vui lòng mô tả cụ thể kết quả dự án do Agent hoặc AI của bạn thực hiện (hoàn thành cẩn thiện sẽ cải thiện tỷ lệ phê duyệt đánh giá/giới hạn gói token/số tiền thưởng của bạn) *
+Vui lòng bao gồm các yếu tố sau: 1. Vấn đề cốt lõi mà dự án giải quyết; 2. Luồng logic cốt lõi (chẳng hạn như liệu nó có bao gồm suy luận chuỗi dài hay hợp tác đa tác nhân hay không).
+Ví dụ: "Tôi đã xây dựng một công cụ tự động tái cấu trúc mã nguồn dựa trên OpenClaw. Nó có thể tự động quét các lỗi kỹ thuật trong mã nguồn hiện có, tạo các yêu cầu kéo (PR) tái cấu trúc dựa trên các thông số kỹ thuật kiến ​​trúc mới nhất và tự động chạy các bài kiểm tra đơn vị để xác minh khép kín. Nó đã được triển khai trong nhóm phát triển backend gồm 20 người của công ty, tiêu thụ khoảng 5 triệu token mỗi ngày và đã cải thiện hiệu quả đánh giá phong cách mã nguồn lên 80%."
+Hơn 100 từ có thể giúp chúng tôi hiểu bạn nhanh hơn.
+0 / 1.200
+Vui lòng điền đầy đủ kết quả cụ thể.
+
+05. Bằng chứng về việc sử dụng và tầm ảnh hưởng (Việc nộp tài liệu này có thể làm tăng tỷ lệ chấp thuận của chương trình đánh giá/giới hạn mã thông báo/số tiền quà tặng)
+Các nội dung tải lên tùy chọn bao gồm: 1. Ảnh chụp màn hình hóa đơn từ các nền tảng AI phổ biến trong 30 ngày qua; 2. Nhật ký hoạt động của thiết bị đầu cuối hoặc ảnh chụp màn hình/video ghi lại quy trình làm việc của Agent (ưu tiên sẽ được dành cho các dự án được mô tả trong câu hỏi trước); 3. Liên kết dự án GitHub hoặc địa chỉ demo sản phẩm trực tuyến.
+Không có tệp nào được chọn
+tải lên
+Kéo và thả tệp hoặc nhấp vào Tải lên
+jpg, jpeg, png, gif, webp, mp4, mov, wmv
+Mỗi lần chỉ được phép tải lên tối đa 5 tập tin, với dung lượng tối đa là 20MB.
+Liên kết dự án GitHub hoặc địa chỉ demo sản phẩm trực tuyến
+
+nộp
+
+trở lại
+Bằng cách gửi thông tin, bạn đồng ý cho phép chúng tôi đánh giá. Dữ liệu của bạn sẽ không được lưu trữ trên máy chủ của chúng tôi.

@@ -1,0 +1,113 @@
+Hãy kể cho chúng tôi về công việc/dự án của bạn.
+Hãy chứng minh khả năng của bạn trong việc vận hành AI – mọi hồ sơ ứng tuyển sẽ được đánh giá thủ công trong vòng 3 ngày làm việc.
+
+01 Địa chỉ email của bạn *
+minhtri132nhu016@gmail.com
+02 Các công cụ phát triển/tác nhân AI bạn thường dùng *
+
+OpenClaw
+
+
+Mã Claude
+
+
+Bộ luật
+
+
+Đại lý Hermes
+
+Mã nguồn mở
+
+
+Mã Kilo
+
+Con trỏ
+
+Lướt ván buồm
+
+Trợ giúp
+
+Cline
+
+khác
+03 Hiện tại, chuỗi mô hình cơ bản chính được sử dụng *
+
+Bộ sưu tập Claude
+
+
+Chuỗi Gemini
+
+
+Chuỗi GPT
+
+Dòng sản phẩm MiMo
+
+Loạt DeepSeek
+
+Dòng Doubao
+
+Dòng sản phẩm MiniMax
+
+khác
+04. Vui lòng mô tả cụ thể kết quả dự án do Agent hoặc AI của bạn thực hiện (hoàn thành cẩn thận sẽ cải thiện tỷ lệ phê duyệt đánh giá/giới hạn gói token/số tiền thưởng của bạn) *
+Vui lòng bao gồm các yếu tố sau: 1. Vấn đề cốt lõi mà dự án giải quyết; 2. Luồng logic cốt lõi (chẳng hạn như liệu nó có bao gồm suy luận chuỗi dài hay hợp tác đa tác nhân hay không).
+Ví dụ: "Tôi đã xây dựng một công cụ tự động tái cấu trúc mã nguồn dựa trên OpenClaw. Nó có thể tự động quét các lỗi kỹ thuật trong mã nguồn hiện có, tạo các yêu cầu kéo (PR) tái cấu trúc dựa trên các thông số kỹ thuật kiến ​​trúc mới nhất và tự động chạy các bài kiểm tra đơn vị để xác minh khép kín. Nó đã được triển khai trong nhóm phát triển backend gồm 20 người của công ty, tiêu thụ khoảng 5 triệu token mỗi ngày và đã cải thiện hiệu quả đánh giá phong cách mã nguồn lên 80%."
+Hơn 100 từ có thể giúp chúng tôi hiểu bạn nhanh hơn.
+0 / 1.200
+Vui lòng điền đầy đủ kết quả cụ thể.
+
+05. Bằng chứng về việc sử dụng và tầm ảnh hưởng (Việc nộp tài liệu này có thể làm tăng tỷ lệ chấp thuận của chương trình đánh giá/giới hạn mã thông báo/số tiền quà tặng)
+Các nội dung tải lên tùy chọn bao gồm: 1. Ảnh chụp màn hình hóa đơn từ các nền tảng AI phổ biến trong 30 ngày qua; 2. Nhật ký hoạt động của thiết bị đầu cuối hoặc ảnh chụp màn hình/video ghi lại quy trình làm việc của Agent (ưu tiên sẽ được dành cho các dự án được mô tả trong câu hỏi trước); 3. Liên kết dự án GitHub hoặc địa chỉ demo sản phẩm trực tuyến.
+Không có tệp nào được chọn
+tải lên
+Kéo và thả tệp hoặc nhấp vào Tải lên
+jpg, jpeg, png, gif, webp, mp4, mov, wmv
+Mỗi lần chỉ được phép tải lên tối đa 5 tập tin, với dung lượng tối đa là 20MB.
+Liên kết dự án GitHub hoặc địa chỉ demo sản phẩm trực tuyến
+
+nộp
+
+trở lại
+Bằng cách gửi thông tin, bạn đồng ý cho phép chúng tôi đánh giá. Dữ liệu của bạn sẽ không được lưu trữ trên máy chủ của chúng tôi.
+
+Xiaomi MiMo Orbit: Chương trình cấp 100T Token cho các nhà phát triển là gì?
+====================
+Xiaomi MiMo cung cấp chương trình tặng token có thời hạn và nhắm mục tiêu cụ thể cho người dùng chất lượng cao, sử dụng trí tuệ nhân tạo (AI) trên toàn thế giới. Chúng tôi sẽ phân phối 100 nghìn tỷ token trong vòng 30 ngày - hoàn toàn miễn phí. Mọi đơn đăng ký đều được xem xét kỹ lưỡng. Chúng tôi muốn những nguồn lực này đến tay những người thực sự xây dựng các ứng dụng bằng AI.
+Xiaomi Mimo là mô hình ngôn ngữ đa ngôn ngữ tự phát triển của Xiaomi. Phiên bản 2.5 là dòng sản phẩm mới nhất - mô hình hàng đầu với khả năng suy luận, đa phương thức và chuyển đổi văn bản thành giọng nói, bao gồm văn bản, hình ảnh và giọng nói.
+Điểm nổi bật của mô hình Xiaomi MiMo (V2.5 Pro)
+Đây là "bộ não" đứng sau chương trình Orbit với các thông số ấn tượng:
+Siêu quy mô: Tổng cộng hơn 1 nghìn tỷ (1T) tham số với 42 tỷ tham số hoạt động.
+Đa phương thức (Omni-Modal): Hiểu đồng thời hình ảnh, video, âm thanh và văn bản.
+Cửa sổ ngữ cảnh cực lớn: Hỗ trợ lên đến 1 triệu (1M) token, cho phép xử lý các tài liệu hoặc video rất dài.
+Hiệu suất: Được đánh giá có khả năng suy luận và lập kế hoạch công việc tương đương với các mô hình cao cấp như Claude Opus 4.6.
+
+Xiaomi MiMo (đặc biệt là phiên bản V2.5 Pro) đóng vai trò là "bộ não" trung tâm, giúp hệ sinh thái nhà thông minh Xiaomi (Mi Home) chuyển từ việc điều khiển thủ công sang tự động hóa dựa trên nhận thức.
+Dưới đây là các cách MiMo hỗ trợ và các ví dụ cụ thể:
+1. Hiểu ngữ cảnh đa phương thức (Omni-Modal)
+Thay vì chỉ nhận lệnh văn bản, MiMo có thể "nhìn" qua camera và "nghe" âm thanh để tự đưa ra quyết định mà bạn không cần lên tiếng.
+Ví dụ 1: Bạn đang cầm hai túi đồ nặng bước vào nhà. MiMo nhận diện hình ảnh qua chuông cửa thông minh, tự động mở khóa cửa và bật đèn hành lang mà không đợi lệnh "Hey Google/Siri".
+Ví dụ 2: Camera AI thấy em bé đang ngủ nhưng chăn bị đạp ra. MiMo tự động tăng nhiệt độ điều hòa thêm 1-2 độ và gửi thông báo nhẹ đến điện thoại bố mẹ.
+2. Khả năng lập kế hoạch và suy luận phức tạp
+MiMo không chỉ bật/tắt thiết bị mà có thể xử lý các yêu cầu mơ hồ hoặc cần nhiều bước thực hiện.
+Ví dụ 1: Bạn nói: "Tôi sắp có bạn đến xem bóng đá". MiMo sẽ tự động: Hạ rèm, chuyển đèn phòng khách sang chế độ rực rỡ, bật máy lọc không khí công suất cao và nhắc robot hút bụi dọn dẹp xong trước khi bạn tới.
+Ví dụ 3: Bạn hỏi: "Tôi nên nấu gì với thực phẩm trong tủ lạnh?". MiMo kết nối với camera trong tủ lạnh, nhận diện nguyên liệu và gửi công thức nấu ăn trực tiếp lên màn hình của bếp từ hoặc nồi chiên không dầu.
+3. Cửa sổ ngữ cảnh 1 triệu Token (Long Context)
+MiMo ghi nhớ thói quen của bạn trong thời gian dài để cá nhân hóa căn nhà.
+Ví dụ 1: MiMo nhận ra cứ 8h tối thứ Tư bạn thường tập Yoga. Nó sẽ tự động phát nhạc thiền, chỉnh độ ẩm máy phun sương về mức lý tưởng và tắt các thông báo không quan trọng từ loa thông minh.
+Ví dụ 2: Nếu bạn thường xuyên quên tắt bàn là vào buổi sáng, MiMo sẽ học được kiểu hành vi này và tự động ngắt điện ổ cắm ngay khi cảm biến cửa nhận thấy bạn đã rời khỏi nhà.
+4. Điều khiển bằng ngôn ngữ tự nhiên (Vượt xa câu lệnh cũ)
+Bạn không cần nhớ tên chính xác của thiết bị hay các câu lệnh khô khan.
+Ví dụ 1: Thay vì nói "Bật máy lọc không khí mức 2", bạn chỉ cần nói: "Trong phòng hơi bí quá". MiMo tự hiểu và tăng tốc độ quạt thông gió.
+Ví dụ 2: Bạn nói: "Chuẩn bị cho tôi đi tắm". Hệ thống sẽ tự động bật bình nước nóng, làm ấm sàn nhà tắm và chuẩn bị khăn khô trong tủ sấy.
+
+Em vừa NHẬN free 200 triệu token của Mì Xào (Xiaomi mimo)!!!
+Dành cho muốn cắm sử dụng cho Opencode, Claude Code, OpenClaw, ... hay làm API LLM phục vụ cho app riêng.
+Hôm qua thấy Xiaomi nó đang chạy chương trình MiMo Orbit, xả kho tận 100 Nghìn Tỷ (100T) token con MiMo V2.5 Pro (điểm artificial analysis ngang với Kimi K2.6) để câu kéo dev hệ sinh thái.
+Lúc đầu đọc quảng cáo thấy bảo max ping là 1.6 tỷ credits, em cũng lười nhưng thôi cứ thử. Đầu tiên apply thử cái form, chém gió chút use-case cách mình sử dụng AI để coding nghe cho thiết thực vào. Vài tiếng sau check mail thấy báo pass, được duyệt hẳn gói Standard Monthly Plan - 200.000.000 credits. Trên X còn có người bảo nhận được Pro (700M) luôn nhưng chắc em không vip nên không được nhận. Nhưng mà 200M đây để anh em vọc vạch là quá nhòe rồi.
+Quy trình cực nhàn, các bác làm theo mấy bước này nhé:
+Vào link này điền form đăng ký: `100t.xiaomimimo.com` (Nhớ mô tả cái project các bác định làm cho tử tế chút là dễ pass).
+Chờ đợi mì xào review. Tầm một hai hôm nó sẽ gửi cái email "You're in..." báo thành công.
+Lên trang platform.xiaomimimo.com, nhớ là phải đăng nhập hoặc đăng ký bằng đúng cái email đã apply ở bước 1 nhé, lệch là không nhận được đâu.
+Đợi trong vòng 24h là hệ thống nó tự bơm đống token đó vào tài khoản. Xong!
+Tất nhiên kèo này Xiaomi nó chơi hệ "while supplies last", tức là chia hết 100T token kia là nó đóng rạp. Nên bác nào đang khát API để nghịch thì tranh thủ vớt luôn cho nóng nhé.
+#j2team_share #j2team_discussion

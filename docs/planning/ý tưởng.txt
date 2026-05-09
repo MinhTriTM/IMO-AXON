@@ -1,0 +1,99 @@
+1. Tên dự án: AI-VoxSync (Vertex AI Powered)
+Mục tiêu: Tự động hóa quá trình thuyết minh/lồng tiếng chất lượng cao, giữ được cảm xúc và khớp thời gian (time-sync) tuyệt đối từ file sub .ass.
+
+2. Quy trình xử lý kỹ thuật (Workflow)
+Bước 1: Phân tích file Subtitle (.ass)
+Khác với .srt, file .ass chứa nhiều thông tin về Actor, Effect và Style.
+
+Parser: Sử dụng thư viện Python (như pysubs2) để bóc tách: Start time, End time, Text, và đặc biệt là Actor.
+
+Mapping: Mỗi Actor trong file sub sẽ được gán cho một Voice ID khác nhau trong Vertex AI (ví dụ: Giọng Nam trầm cho nhân vật A, giọng Nữ nhẹ nhàng cho nhân vật B).
+
+Bước 2: Xử lý ngữ cảnh bằng Gemini (Vertex AI Multimodal)
+Đây là điểm khác biệt của ứng dụng tích hợp AI:
+
+Input: Gửi đoạn text + mô tả cảnh quay (nếu có) vào Gemini 1.5 Flash.
+
+Prompting: Yêu cầu AI phân tích sắc thái (vui, buồn, giận dữ) dựa trên câu thoại và các ký hiệu trong file sub (ví dụ: dấu "!" hay "...").
+
+Output: Trả về bộ tham số điều chỉnh cho API Text-to-Speech (tốc độ - speaking rate, cao độ - pitch).
+
+Bước 3: Tạo âm thanh với Vertex AI Text-to-Speech
+Sử dụng Cloud Text-to-Speech API (thuộc hệ sinh thái Vertex AI):
+
+Long Audio Synthesis: Hỗ trợ tạo các đoạn thoại dài mà không bị ngắt quãng.
+
+Neural2 & Studio Voices: Sử dụng các giọng nói chất lượng cao nhất để đảm bảo tính tự nhiên, không bị "robot".
+
+SSML (Speech Synthesis Markup Language): Tự động tạo thẻ SSML từ phân tích của Gemini ở Bước 2 để điều chỉnh ngắt nghỉ đúng theo thời lượng (duration) của dòng sub đó.
+
+Bước 4: Đồng bộ và Trộn âm (FFmpeg Integration)
+Time-matching: Nếu đoạn audio AI dài hơn thời gian hiển thị sub, ứng dụng sẽ tự động dùng FFmpeg để tăng tốc độ audio (tempo) mà không làm biến đổi cao độ (pitch).
+
+Mixing: Trộn file audio thuyết minh mới vào video gốc. Có thể dùng AI để tự động giảm âm lượng video gốc (ducking) khi có tiếng thuyết minh và tăng lại khi đoạn thoại kết thúc.
+
+3. Kiến trúc ứng dụng (Sử dụng Flet)
+Với sở thích dùng Flet của bạn, giao diện có thể thiết kế theo phong cách Dashboard hiện đại (Material Design 3):
+
+Side Bar: Quản lý danh sách video và các project thuyết minh.
+
+Main View: * Trình phát video (Sử dụng flet.Video).
+
+Bảng danh sách Subtitle: Cho phép chỉnh sửa text hoặc chọn lại giọng đọc cho từng dòng ngay lập tức.
+
+Timeline: Hiển thị các khối audio đã được gen bởi AI.
+
+Config Panel: Nơi cấu hình API Key Vertex AI, chọn chất lượng xuất (1080p, 4K) và định dạng audio (MP3, WAV).
+
+4. Các tính năng nâng cao (Tạo điểm nhấn)
+Auto-Translation: Tích hợp Vertex AI Translation để dịch file sub từ tiếng Anh/Trung sang tiếng Việt trước khi thuyết minh.
+
+Voice Cloning (Dự phòng): Nếu Vertex AI hỗ trợ Custom Voice, người dùng có thể tải lên mẫu giọng 30s để AI học và thuyết minh bằng chính giọng đó.
+
+Preview Mode: Cho phép nghe thử từng dòng thoại trước khi tiến hành render toàn bộ video để tiết kiệm chi phí API.
+
+Local Cache (SQLite): Lưu trữ các đoạn audio đã gen vào database (mà bạn đã thạo qua dự án HDMS) để tránh việc gen lại cùng một nội dung nhiều lần, giúp tiết kiệm chi phí.
+
+5. Thách thức kỹ thuật cần lưu ý
+Độ trễ (Latency): Việc gọi API liên tục cho từng dòng sub có thể chậm. Bạn nên triển khai theo cơ chế Async/Queue (xử lý song song nhiều dòng sub cùng lúc).
+
+Chi phí API: Vertex AI tính phí theo ký tự. Cần có cơ chế tối ưu hóa text trước khi gửi.
+
+1. Nhóm Giọng Cao Cấp Nhất (Studio)
+Đây là công nghệ mới nhất, cho chất lượng âm thanh vượt trội, nhịp điệu cực kỳ giống người thật.
+Mã giọng: vi-VN-Studio-C (Nữ).
+Giá (VND):
+1 triệu ký tự đầu/tháng: Miễn phí.
+Ký tự thứ 1.000.001 trở đi: ~4.213.680 VND / 1 triệu ký tự.
+Phù hợp: App kể chuyện, lồng tiếng phim, podcast chất lượng cao.
+2. Nhóm Giọng Tự Nhiên (Neural2 & Wavenet)
+Đây là nhóm phổ biến nhất vì cân bằng giữa chất lượng và giá thành. Giọng Neural2 nghe hiện đại và ít "máy" hơn Wavenet.
+Mã giọng Neural2:
+vi-VN-Neural2-A (Nữ - Bắc)
+vi-VN-Neural2-B (Nam - Bắc)
+vi-VN-Neural2-C (Nam - Nam)
+vi-VN-Neural2-D (Nữ - Nam)
+Mã giọng Wavenet:
+vi-VN-Wavenet-A (Nữ - Bắc)
+vi-VN-Wavenet-B (Nam - Bắc)
+vi-VN-Wavenet-C (Nữ - Nam)
+vi-VN-Wavenet-D (Nam - Nam)
+Giá (VND):
+1 triệu ký tự đầu/tháng: Miễn phí.
+Ký tự thứ 1.000.001 trở đi: ~421.368 VND / 1 triệu ký tự.
+Phù hợp: Video marketing, đọc tin tức, trợ lý ảo thông minh.
+3. Nhóm Giọng Cơ Bản (Standard)
+Sử dụng công nghệ cũ hơn, âm thanh có cảm giác hơi "robot", nhưng giá cực rẻ.
+Mã giọng:
+vi-VN-Standard-A (Nữ - Bắc)
+vi-VN-Standard-B (Nam - Bắc)
+vi-VN-Standard-C (Nữ - Nam)
+vi-VN-Standard-D (Nam - Nam)
+Giá (VND):
+4 triệu ký tự đầu/tháng: Miễn phí.
+Ký tự thứ 4.000.001 trở đi: ~105.342 VND / 1 triệu ký tự.
+Phù hợp: Thông báo hệ thống ngắn, app học tập cơ bản, các dự án cần tiết kiệm chi phí tối đa.
+
+xây app có mở rộng xem quyết định chọn giọng nào
+
+đã cài Google Cloud SDK và đã chạy lệnh gcloud auth application-default login rồi, thì máy tính của bạn đã được cấp quyền "ngầm".

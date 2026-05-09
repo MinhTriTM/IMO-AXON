@@ -1,0 +1,11 @@
+# VLC_AI_Dubber/
+# │
+# ├── requirements.txt         # Chứa danh sách thư viện cần cài
+# ├── config.py                # Chứa thông tin cấu hình (Mật khẩu VLC, Giọng đọc...)
+# ├── main.py                  # File chạy chính của chương trình
+# │
+# └── audio_cache/             # (Thư mục này code sẽ tự tạo để lưu file mp3)
+requests==2.31.0
+pygame==2.5.2
+pysubs2==1.6.1
+google-cloud-texttospeech==2.14.1

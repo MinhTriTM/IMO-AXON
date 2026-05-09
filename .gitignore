@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# Media Assets (Senior rule: Large binaries stay local)
+src/modules/dubbing/TMF_Local_Engine/
+data/input/*
+!data/input/.gitkeep
+data/output/*
+!data/output/.gitkeep
+*.mp3
+*.mp4
+*.wav
+*.mov
+*.mkv
+*.png
+*.jpg
+*.onnx
+*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project Mandate Logs (Public for Xiaomi Evidence)
+# Lich_Su_Truy_Van/
+# **/Lich_Su_Truy_Van/

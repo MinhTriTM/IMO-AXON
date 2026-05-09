@@ -1,0 +1,36 @@
+Việc chuyển đổi trực tiếp một ứng dụng Android (.apk) sang định dạng Windows (.exe) một cách tự động là không thể vì hai nền tảng có kiến trúc hoàn toàn khác nhau. Tuy nhiên, dựa trên danh sách các thư viện mã nguồn mở trong ảnh bạn cung cấp (như pdfium, readium, JSoup, Lame), mình có thể hướng dẫn bạn cách xây dựng một ứng dụng tương tự trên PC bằng Python.Đây là lộ trình để bạn tự tạo một bản "T2S" cho máy tính:1. Phân tích các thành phần tương ứngDựa vào các thư viện trong ảnh, đây là những gì bạn cần để tái tạo tính năng trên PC:Tính năngThư viện Android (trong ảnh)Thư viện PC (Python gợi ý)Đọc nội dung WebJSoupBeautifulSoup4 hoặc requestsĐọc file PDFpdfiumPyMuPDF (fitz)Đọc file EPUBreadium-2ebooklibCông cụ Text-to-SpeechAndroid TTSedge-tts (Giọng đọc cực hay của Microsoft)Xuất file MP3Lamepydub hoặc ffmpegGiao diện (UI)Material DialogsCustomTkinter hoặc PyQt62. Mã nguồn mẫu (Bản rút gọn - MVP)Dưới đây là đoạn code Python cơ bản sử dụng thư viện edge-tts (cho giọng đọc tự nhiên giống app T2S) và PyMuPDF để đọc PDF.Cài đặt thư viện:Bashpip install edge-tts pygame pymupdf
+Code mẫu T2S_Clone.py:Pythonimport asyncio
+import edge_tts
+import pygame
+import os
+import fitz  # PyMuPDF
+
+# 1. Hàm trích xuất văn bản từ PDF
+def read_pdf(file_path):
+    doc = fitz.open(file_path)
+    text = ""
+    for page in doc:
+        text += page.get_text()
+    return text
+
+# 2. Hàm chuyển văn bản thành tiếng nói và phát
+async def speak(text, voice="vi-VN-HoaiMyNeural"):
+    output_file = "output.mp3"
+    communicate = edge_tts.Communicate(text, voice)
+    await communicate.save(output_file)
+
+    # Phát nhạc bằng pygame
+    pygame.mixer.init()
+    pygame.mixer.music.load(output_file)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        continue
+    pygame.mixer.quit()
+
+if __name__ == "__main__":
+    content = "Chào bạn, đây là ứng dụng T2S phiên bản PC tự chế."
+    # Bạn có thể thay content bằng read_pdf("document.pdf")
+    asyncio.run(speak(content))
+3. Cách tạo file .exe từ codeSau khi bạn đã hoàn thiện code giao diện, bạn có thể đóng gói nó thành một file .exe duy nhất để sử dụng trên các máy tính khác mà không cần cài Python.Cài đặt PyInstaller:Bashpip install pyinstaller
+Đóng gói:Bashpyinstaller --noconsole --onefile T2S_Clone.py
+Sau khi chạy xong, file T2S_Clone.exe sẽ nằm trong thư mục dist.4. Gợi ý nâng cao để giống T2S gốc:Giao diện: Sử dụng CustomTkinter để tạo giao diện tối (Dark Mode) giống như trong ảnh screenshot bạn gửi.Trình duyệt: Sử dụng selenium hoặc playwright nếu bạn muốn tính năng "Type2Speak" trực tiếp từ trình duyệt web.Giọng đọc: T2S nổi tiếng nhờ hỗ trợ nhiều engine. Trên PC, edge-tts là lựa chọn miễn phí và chất lượng cao nhất hiện nay (vượt xa Google TTS mặc định).Bạn có muốn mình hướng dẫn chi tiết hơn về cách tạo giao diện (UI) bằng Python để nó trông chuyên nghiệp hơn không?
