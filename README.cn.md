@@ -1,4 +1,7 @@
 # 🚀 项目名称：MIMO-AXON (精英多智能体系统)
+
+[**Tiếng Việt**](README.md) | [**English**](README.en.md) | [**中文**](README.cn.md) | [**Русский**](README.ru.md)
+
 ### *Acoustic & X-media Orchestration Network - 机密多媒体处理系统*
 
 [![Xiaomi MIMO 100T](https://img.shields.io/badge/Xiaomi-MIMO_100T-orange?style=for-the-badge&logo=xiaomi)](https://100t.xiaomimimo.com)

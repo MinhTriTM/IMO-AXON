@@ -1,4 +1,7 @@
 # 🚀 PROJECT: MIMO-AXON (Elite Multi-Agent System)
+
+[**Tiếng Việt**](README.md) | [**English**](README.en.md) | [**中文**](README.cn.md) | [**Русский**](README.ru.md)
+
 ### *Acoustic & X-media Orchestration Network - Hệ thống Xử lý Đa phương tiện Cơ mật*
 
 [![Xiaomi MIMO 100T](https://img.shields.io/badge/Xiaomi-MIMO_100T-orange?style=for-the-badge&logo=xiaomi)](https://100t.xiaomimimo.com)
